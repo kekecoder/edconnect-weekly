@@ -2,26 +2,25 @@
 <html>
   <head>
     <title>Project Explorer App</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-      a{
-        color: #fff;
-      }
-    </style>
+    <link rel="stylesheet" href="bootstrap.min.css">
   </head>
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-md-between">
-        <h1>Project Explorer</h1>
-        <a href="index.html">Home</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary d-flex">
+      <div class="navbar-brand text-white">Project Explorer</div>
+        <a href="index.html" class="text-white nav-item">Home</a>
         <form name="searchForm" class="form-inline">
-          <input type="search" placeholder="Search Projects" aria-label="Search" class="form-control mr-sm-2">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="button">Search</button>
+          <div class="form-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+          </div>
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <a href="createProject.html">Submit</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
+        <ul class="navbar-nav d-flex justify-space-evenly">
+          <li class="nav-item"><a class="nav-link text-white" href="createProject.html" class="text-white">Submit</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="login.html" class="text-white nav-item">Login</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="register.html" class="text-white">Register</a></li>
+        </ul>
       </nav>
     </header>
     <main>
