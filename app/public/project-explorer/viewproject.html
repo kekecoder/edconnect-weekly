@@ -1,49 +1,131 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <title>Project Explorer App</title>
   </head>
+
   <body>
     <header>
-      <h1>Project Explorer</h1>
-      <h2>One Stop Database For Academic Projects</h2>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary d-flex">
+        <div class="navbar-brand text-white">Project Explorer</div>
+        <a href="index.html" class="text-white nav-item">Home</a>
+        <form name="searchForm" class="form-inline">
+          <div class="form-group">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search Projects"
+              aria-label="Search"
+            />
+          </div>
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="navbar-nav d-flex justify-space-evenly">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="createproject.html"
+              class="text-white"
+              >Submit</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="login.html"
+              class="text-white nav-item"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="register.html"
+              class="text-white"
+              >Register</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="search.html">Projects</a>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
-    </nav>
     <main>
-      <h3>Project 1</h3>
-      <a href="editProject.html">Edit Project</a>
-      <ul>
-        <li>Created by : Jane Doe</li>
-        <li>Date Created: 00/00/0000</li>
-        <li>Last Updated: 01/01/0001</li>
-      </ul>
-      <br />
-      <h3>Project Abstract</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim est laborum.
-      </p>
-
-      <h3>Project Details</h3>
-      <ul>
-        <li>Authors: John Doe, Jane Doe</li>
-        <li>Tags: #Asphyxia, #GSW</li>
-        <li>
-          Project Files: <a href="#placeholder">File 1</a>,
-          <a href="#placeholder">File 2</a>
-        </li>
-      </ul>
+      <div class="container mt-4">
+        <h3 class="m-3">Project 1</h3>
+        <div class="row bg-light">
+          <div class="col-md-3">
+            <h6 class="text-muted">Created By</h6>
+            <span>John Doe</span>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-muted">Date Created</h6>
+            <span>2020-08-30</span>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-muted">Last Updated</h6>
+            <span>2020-08-30</span>
+          </div>
+          <div class="col-md-3 d-flex justify-content-end">
+            <button type="button" class="btn btn-primary">View Project</button>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h4>Project Abstract</h4>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              excepturi minima quod culpa aspernatur esse porro temporibus
+              nesciunt atque sunt magnam cupiditate cum officiis iste numquam
+              eius provident adipisci ut repellat eos quibusdam perferendis
+              voluptate corrupti distinctio? Veniam magni dolorum vel nihil
+              consectetur quidem, ipsum similique, consequatur commodi ratione
+              sunt?
+            </p>
+            <form>
+              <div class="form-group">
+                <label class="form-label">Comments</label>
+                <textarea
+                  name="comment"
+                  cols="10"
+                  rows="8"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+              </div>
+              <span style="text-align: center">No Comments yet</span>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h4>Project Details</h4>
+            <div class="card">
+              <div class="card-header">Author(s)</div>
+              <div class="card-body">
+                <h5 class="card-title">Ade</h5>
+                <div class="card-hearder bg-light"><a href="#">#web</a></div>
+              </div>
+            </div>
+            <div class="card mt-3">
+              <div class="card-header">Project Files</div>
+              <div class="card-body">No Uploaded files yet</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="container-fluid mt-3 bg-secondary">
+      <div class="row align-items-end">
+        <div class="col-md-12">
+          <p class="text-light py-3" style="text-align: end">
+            Project Explorer &copy;2020.
+            <span class="font-weight-bold">Edconnect</span>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

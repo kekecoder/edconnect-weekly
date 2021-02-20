@@ -2,27 +2,55 @@
 <html>
   <head>
     <title>Project Explorer App</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary d-flex">
-    <div class="navbar-brand text-white">Project Explorer</div>
-      <a href="index.html" class="text-white nav-item">Home</a>
-      <form name="searchForm" class="form-inline">
-        <div class="form-group">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
-        </div>
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-      </form>
-      <ul class="navbar-nav d-flex justify-space-evenly">
-        <li class="nav-item"><a class="nav-link text-white" href="createProject.html" class="text-white">Submit</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="login.html" class="text-white nav-item">Login</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="register.html" class="text-white">Register</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary d-flex">
+        <div class="navbar-brand text-white">Project Explorer</div>
+        <a href="index.html" class="text-white nav-item">Home</a>
+        <form name="searchForm" class="form-inline">
+          <div class="form-group">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search Projects"
+              aria-label="Search"
+            />
+          </div>
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="navbar-nav d-flex justify-space-evenly">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="createproject.html"
+              class="text-white"
+              >Submit</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="login.html"
+              class="text-white nav-item"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              href="register.html"
+              class="text-white"
+              >Register</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div class="container">
         <form name="register" class="mx-auto w-75">
@@ -31,25 +59,45 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label for="">First Name:</label>
-                <input type="text" name="firstName" class="form-control" placeholder="First name">
+                <input
+                  type="text"
+                  name="firstName"
+                  class="form-control"
+                  placeholder="First name"
+                />
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" class="form-control" placeholder="Last name">
+                <input
+                  type="text"
+                  name="lastName"
+                  class="form-control"
+                  placeholder="Last name"
+                />
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" name="email" class="form-control" placeholder="Your Email Address">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Your Email Address"
+                />
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" name="password" class="form-control" placeholder="Password">
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
               </div>
             </div>
             <div class="col-md-4">
@@ -60,14 +108,16 @@
                   <option value="computer_information_systems">
                     Computer Information Systems
                   </option>
-                  <option value="computer_technology">Computer Technology</option>
+                  <option value="computer_technology">
+                    Computer Technology
+                  </option>
                 </select>
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
                 <label for="matricNumber">Matric Number</label>
-                <input type="text" name="matricNumber" class="form-control">
+                <input type="text" name="matricNumber" class="form-control" />
               </div>
             </div>
             <div class="col-md-4">
@@ -87,19 +137,22 @@
             </div>
             <div class="col">
               <div class="form-group">
-                <input type="submit" class="btn btn-primary mt-2">
+                <input type="submit" class="btn btn-primary mt-2" />
               </div>
             </div>
           </div>
-      </form>
+        </form>
       </div>
     </main>
     <footer class="container-fluid mt-3 bg-secondary">
       <div class="row align-items-end">
         <div class="col-md-12">
-          <p class="text-light py-3" style="text-align: end;">Project Explorer &copy;2020. <span class="font-weight-bold">Edconnect</span></p>
+          <p class="text-light py-3" style="text-align: end">
+            Project Explorer &copy;2020.
+            <span class="font-weight-bold">Edconnect</span>
+          </p>
         </div>
       </div>
-  </footer>
+    </footer>
   </body>
 </html>
