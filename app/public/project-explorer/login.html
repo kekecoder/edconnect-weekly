@@ -25,13 +25,19 @@
     </header>
     <main>
       <div class="container">
-        <form name="login" class="form-group mx-auto w-75">
+        <form name="login" class="mx-auto w-75">
             <h1>Login</h1>
-            <label>Email address:</label>
-          <input type="email" name="email" class="form-control" placeholder="Your Email Address">
-          <label>Password:</label>
+            <div class="form-group">
+            <label class="form-label">Email address:</label>
+          <input type="email" name="email" class="form-control" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Password:</label>
           <input type="password" name="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group">
           <input type="submit" class="btn btn-primary mt-2">
+        </div>
         </form>
         </main>
       <footer class="container-fluid mt-3 bg-secondary">
